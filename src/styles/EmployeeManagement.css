@@ -1,0 +1,128 @@
+.employee-management {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.employee-management h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+  border-bottom: 3px solid #667eea;
+  padding-bottom: 0.5rem;
+}
+
+.employee-form {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 6px;
+  margin-bottom: 2rem;
+  border-left: 4px solid #667eea;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group:last-child {
+  margin-bottom: 0;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.employees-list {
+  margin-top: 2rem;
+}
+
+.employees-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.employees-table thead {
+  background-color: #f0f0f0;
+}
+
+.employees-table th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 2px solid #ddd;
+}
+
+.employees-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.employees-table tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+.employees-table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+.employees-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.btn-delete {
+  padding: 0.5rem 1rem;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.btn-delete:hover {
+  background-color: #c0392b;
+  box-shadow: 0 2px 5px rgba(231, 76, 60, 0.3);
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  .employee-management {
+    padding: 1rem;
+  }
+
+  .employees-table {
+    font-size: 0.9rem;
+  }
+
+  .employees-table th,
+  .employees-table td {
+    padding: 0.7rem 0.5rem;
+  }
+}
