@@ -5,7 +5,9 @@ import AttendanceManagement from './components/AttendanceManagement';
 
 function App() {
   const [activeTab, setActiveTab] = useState('employees');
-  const [apiUrl] = useState('http://localhost:8000/api');
+  const [apiUrl] = useState(
+    process.env.REACT_APP_API_URL || 'https://hrms-lite-backend.onrender.com/apii'
+  );
 
   return (
     <div className="App">
