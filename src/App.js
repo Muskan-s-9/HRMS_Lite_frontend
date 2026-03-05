@@ -6,7 +6,7 @@ import AttendanceManagement from './components/AttendanceManagement';
 function App() {
   const [activeTab, setActiveTab] = useState('employees');
   const [apiUrl] = useState(
-    process.env.REACT_APP_API_URL || 'https://hrms-lite-backend-tyro.onrender.com/api/'
+    process.env.REACT_APP_API_URL || 'https://hrms-lite-backend-tyro.onrender.com/api'
   );
 
   return (
